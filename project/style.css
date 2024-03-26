@@ -1,57 +1,103 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 'Roboto',sans-serif;
 }
 
-.main{
+.container{
     width: 100%;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("img 6.jpg");
-    background-position: center;
+    background-color:lightslategray;
     background-size: cover;
-    height: 109vh;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    height: 100vh;
 }
 
 .navbar{
-    width: 1200px;
     height: 75px;
-    margin: auto;
+    max-width: 1200px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    margin:auto;
 }
 
-.icon{
-    width: 200px;
+
+.logo{
+    width:40px;
+    height:40px;
+ }
+
+.nav{
+    flex: 2;
+    text-align: right;
+}
+
+.menu{
+    width: 400px;
     float: left;
     height: 70px;
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
-    background-color: #dde5ed;
-    color: rgb(209, 96, 96);
-    text-align: center;
-    line-height: 90px;
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    border-radius: 50%;
-    
+.nav ul li{
+    line-height: 80px;
+    display: inline-block;
+    margin: 0 5px;
 }
 
-.menu{
-    width:400px;
-    float:left;
-    height:70px;
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+.h1{
+    color: #fff;
+    font-size: 250px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
 }
 
-ul{
-    float:left;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
 }
 
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
+.card1{
+    background-image: url(images/pic2.webp);
+}
+.card2{
+    background-image: url(images/pic3.jpg);
+}
+.card3{
+    background-image: url(images/pic12.jpg);
+}
+.card4{
+    background-image: url(images/pic13.jpg);
+}
+.card:hover{
+    transform: translateY(-10px);
 }
