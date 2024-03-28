@@ -13,6 +13,7 @@
     padding-right: 8%;
     box-sizing: border-box;
     height: 100vh;
+    animation: change 10s infinite ease-in-out;
 }
 
 .navbar{
@@ -100,4 +101,19 @@
 }
 .card:hover{
     transform: translateY(-10px);
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(images/pic1.jpg);
+    }
+    20%
+    {
+        background-image: url(images/pic4.jpg);
+    }
+    60%
+    {
+        background-image: url(images/pic5.jpg);
+    }
 }
