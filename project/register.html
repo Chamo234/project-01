@@ -2,7 +2,47 @@
 <html lang="en">
 <head>
     
-    <title>Document</title>
+    <title>register</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register for Our Dancing Academy</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Dance Experience (years):</label>
+                <input type="number" id="experience" name="experience" required>
+            </div>
+            <div class="form-group">
+                <label for="dancestyle">Preferred Dance Style:</label>
+                <select id="dancestyle" name="dancestyle">
+                    <option value="Traditional">Traditional</option>
+                    <option value="BallRoom">BallRoom</option>
+                    <option value="Pahatarata">Pahatarata</option>
+                    <option value="Free style">Free style</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
    
 </head>
 <body>

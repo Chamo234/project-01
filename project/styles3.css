@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+
+}
+
+h2{
+    color: white;
+    font-family: arial;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+#img-gal{
+    height: 360px;
+    padding: 50px;
+}
+
+footer{
+    background-color: white;
+    bottom: 5px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
