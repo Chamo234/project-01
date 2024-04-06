@@ -6,7 +6,7 @@
 
 .container{
     width: 100%;
-    background-color:lightslategray;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/pic7.jpg);
     background-size: cover;
     background-position: center;
     padding-left: 8%;
@@ -16,24 +16,31 @@
     animation: change 10s infinite ease-in-out;
 }
 
-.navbar{
+navbar{
     height: 75px;
     max-width: 1200px;
     color:#fff;
     display: flex;
     align-items: center;
-    margin:auto;
+    padding-top: 50px;
 }
 
 
 .logo{
-    width:40px;
-    height:40px;
+    width:60px;
+    height:60px;
+    margin: 10px;
+    
  }
 
-.nav{
+nav{
     flex: 2;
     text-align: right;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
 }
 
 .menu{
@@ -42,16 +49,19 @@
     height: 70px;
 }
 
-.nav ul li{
+ul {
     line-height: 80px;
-    display: inline-block;
+    display: flex;
     margin: 0 5px;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
 }
 
-.nav ul li a{
+ ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 20px;
 }
 .row{
     display: flex;
@@ -61,15 +71,15 @@
 .col{
     flex-basis: 50%;
 }
-.h1{
+h1{
     color: #fff;
-    font-size: 250px;
+    font-size: 40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.p{
+p{
     color: #fff;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .card{
@@ -106,14 +116,55 @@
 @keyframes change{
     0%
     {
-        background-image: url(images/pic1.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/pic1.jpg);
     }
     20%
     {
-        background-image: url(images/pic4.jpg);
+        background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/pic8.jpg);
     }
     60%
     {
-        background-image: url(images/pic5.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/pic11.jpg);
     }
 }
+
+.wrapper{
+    margin-top: 600px;
+}
+
+.wrapper h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.Home{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content:center ;
+}
+
+.Home.service{
+          background: #fff;
+          margin: 5px;
+          margin-bottom: 50px;
+          width: 300px;
+          line-height: 20px;
+          color: #000;
+          position: relative;
+}
+
+.Home.service h3{
+    color: #ce1b1b;
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.Home.service p{
+    color: #ce1b1b;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+} 
