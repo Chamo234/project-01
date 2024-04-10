@@ -4,6 +4,47 @@ body {
     margin: 0;
     padding: 0;
 }
+.navbar{
+    height: 75px;
+    max-width: 1200px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+nav{
+    flex: 2;
+    text-align: right;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    line-height: 80px;
+    display: flex;
+    margin: 0 5px;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+}
+
+ ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
 
 .container {
     max-width: 520px;
