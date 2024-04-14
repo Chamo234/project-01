@@ -4,39 +4,60 @@ body {
     margin: 0;
     padding: 0;
 }
-.navbar{
-    height: 75px;
-    max-width: 1200px;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
+
+header,footer{
+    position: absolute;
+    background-color:rgb(70, 41, 41);
+    width: 100%;
+    color: #fff;
+    
 }
 
+header{
+    height: 10vh;
+    top: 10px;
+}
+    
+.navbar {
+        
+    width: 1200px;
+    height: 75px;
+    margin:auto;
+    color: #fff;
+    display: flex;
+}
+
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
 
 nav{
     flex: 2;
-    text-align: right;
+    text-align:left;
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
     padding: 1rem 3rem;
-    align-items: center;
+    justify-content:right;
+    align-items:center;
+    
+}
+menu{
+    width:400px;
+    float:left;
+    height:70px;
 }
 
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-
-ul {
-    line-height: 80px;
-    display: flex;
-    margin: 0 5px;
+ul{
+    list-style: none;
+    display:flex;
+    margin-right:40px;
     flex-direction: row;
     gap: 3rem;
     text-align: left;
+
 }
 
  ul li a{
@@ -44,6 +65,7 @@ ul {
     color: #fff;
     font-size: 20px;
 }
+
 
 
 .container {
@@ -94,4 +116,18 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #161010;
+    color: #fff;
+    text-align:center;
+    padding: 5px 0;
 }

@@ -4,57 +4,57 @@
 
 }
 
-.container{
+header,footer{
+    position: absolute;
+    background-color: rgb(70, 41, 41);
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
-    height: 100vh;
-    animation: change 10s infinite ease-in-out;
+    color: #fff;
 }
 
-navbar{
-    height: 75px;
-    max-width: 1200px;
-    color:#fff;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
+header{
+    height: 10vh;
 }
-
-
-.logo{
-    width:60px;
-    height:60px;
-    margin: 10px;
     
- }
+.navbar {
+        
+    width: 1200px;
+    height: 75px;
+    margin:auto;
+    color: #fff;
+    display: flex;
+}
+
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
 
 nav{
     flex: 2;
-    text-align: right;
+    text-align:left;
     flex-direction: row;
     display: flex;
-    justify-content: space-between;
     padding: 1rem 3rem;
-    align-items: center;
+    justify-content:right;
+    align-items:end;
+    
+}
+menu{
+    width:400px;
+    float:left;
+    height:70px;
 }
 
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-
-ul {
-    line-height: 80px;
-    display: flex;
-    margin: 0 5px;
+ul{
+    list-style: none;
+    display:flex;
+    margin-right:40px;
     flex-direction: row;
     gap: 3rem;
     text-align: left;
+
 }
 
  ul li a{
@@ -63,44 +63,47 @@ ul {
     font-size: 20px;
 }
 
+
+   
 .grid-container {
-     display: inline grid;
-     grid-template-columns: auto auto auto auto;
-     column-gap: 40px;
-     row-gap: 40px;
-     background-color: rgb(252, 225, 192);
-     gap: 6rem;
-     padding: 10px  ;
+     display:grid;
+     grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+     column-gap: 4px;
+     row-gap: 4px;
+     background-color: rgb(236, 182, 115);
+     gap: 2rem;
+     padding: 80px ;
     align-content:center;
 }
 
-.item{
-    width: 250px;
-    height: 350px;
-    background-color: rgb(16, 16, 16);
+.grid-item{
+    width: 450px;
+    height: 650px;
+    background-color: rgb(95, 62, 62);
 }
 
 
-.item img{
-    width: 250px;
-    height: 150px;
-    align-items: center;
+.grid-item img{
+    width: 450px;
+    height: 320px;
+    align-items:center;
 }
 
 
-.item h3{
+.grid-item h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    color: azure;
+    color: rgb(153, 241, 241);
 }
 
 
-.item p{
+.grid-item p{
     justify-content: center;
-    padding: 10px;
-    color: aqua;
-    font-size: 20px;
+    padding: 40px;
+    color:#fff;
+    font-size: 18px;
+    text-align: justify;
 }
 
 
