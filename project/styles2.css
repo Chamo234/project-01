@@ -4,6 +4,65 @@
 
 }
 
+.container{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    height: 100vh;
+    animation: change 10s infinite ease-in-out;
+}
+
+navbar{
+    height: 75px;
+    max-width: 1200px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+.logo{
+    width:60px;
+    height:60px;
+    margin: 10px;
+    
+ }
+
+nav{
+    flex: 2;
+    text-align: right;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    line-height: 80px;
+    display: flex;
+    margin: 0 5px;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+}
+
+ ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
 .grid-container {
      display: inline grid;
      grid-template-columns: auto auto auto auto;
